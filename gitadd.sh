@@ -1,0 +1,24 @@
+git add	1/
+git add	10/
+git add	11/
+git add	12/
+git add	13/
+git add	14/
+git add	15/
+git add	16/
+git add	17/
+git add	18/
+git add	2/
+git add	3/
+git add	4/
+git add	5/
+git add	6/
+git add	7/
+git add	8/
+git add	9/
+git add	GNU_makefile_template
+git add	README
+git add	gitadd.sh
+git add	makefile
+git add	noinput
+
