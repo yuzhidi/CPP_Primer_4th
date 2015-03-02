@@ -50,11 +50,36 @@ int main() {
 //    b.profuncA();
 #endif
     C c;
+    cout<<"## c.pubfuncA():"<<endl;
     c.pubfuncA();
-    A* pa = new C();
-    pa->pubfuncA();
-    ((C*)pa)->pubfuncA();
+    cout<<"## ((A)c).pubfuncA():"<<endl;
     ((A)c).pubfuncA();
+    cout<<"## ((B)c).pubfuncA():"<<endl;
     ((B)c).pubfuncA();
+
+    A* pa = new C();
+    cout<<"## pa->pubfuncA():"<<endl;
+    pa->pubfuncA();
+    cout<<"## ((C*)pa)->pubfuncA():"<<endl;
+    ((C*)pa)->pubfuncA();
     return 0;
 }
+/*
+## c.pubfuncA():
+pubfuncABC()
+profuncABC()
+profuncA()
+profuncAB()
+## ((A)c).pubfuncA():
+pubfuncA()
+## ((B)c).pubfuncA():
+pubfuncAB()
+## pa->pubfuncA():
+pubfuncA()
+## ((C*)pa)->pubfuncA():
+pubfuncABC()
+profuncABC()
+profuncA()
+profuncAB()
+
+ */
